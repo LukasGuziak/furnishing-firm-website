@@ -18,17 +18,22 @@
 }
 
 @mixin iconsBox {
-	height: 5rem;
-	width: 5rem;
-	line-height: 5rem;
+	padding: 1rem 1.5rem;
 	font-size: 2rem;
 	background: var(--light-bg);
 	color: var(--black);
 	cursor: pointer;
 	text-align: center;
-
+	border-radius: 5px;
+	a {
+		color: var(--black);
+	}
 	&:hover {
 		background: var(--black);
 		color: var(--white);
+		a,
+		i {
+			color: var(--white);
+		}
 	}
 }

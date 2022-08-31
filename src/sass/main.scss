@@ -41,7 +41,7 @@ body {
 .header {
 	height: 100vh;
 	background-color: rgba(114, 94, 39, 0.2);
-	background-image: url('/dist/img/heroS.jpg');
+	background-image: url('../img/heroL.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -57,7 +57,7 @@ body {
 		right: 0;
 		align-items: center;
 		justify-content: space-between;
-		padding: 1.5em 10%;
+		padding: 1.5em 15%;
 		z-index: 1000;
 		box-shadow: var(--box-shadow);
 
@@ -78,7 +78,12 @@ body {
 		}
 		&__icon {
 			@include iconsBox();
-			margin-left: 1rem;
+			&--menu {
+				display: none;
+			}
+			&--phone {
+				i{padding-right: 1em;}
+			}
 		}
 	}
 }
@@ -91,31 +96,63 @@ body {
 // MEDIA QUERIES
 // ================================
 
-@media (min-width: 576px) {
+@media (max-width: 1400px) {
 }
 
-@media (min-width: 768px) {
-	//**********header section************
+@media (max-width: 1199px) {
 	.header {
-		background-image: url('/dist/img/heroL.jpg');
+		.navigation {
+			padding: 1.5em 10%;
+		}
 	}
 }
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
 	//**********header section************
 	.header {
 		.navigation {
+			padding: 1.5em 1em;
 			&__icon {
 				&--menu {
-					display: none;
+					display: inline-block;
 				}
+			}
+			&__navbar {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				padding: 2em 0;
+				background-color: var(--white);
+				border-top: var(--border);
+				box-shadow: var(--box-shadow);
+				clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+				&.active {
+					clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+				}
+			}
+			&__item {
+				display: block;
+				text-align: center;
+				padding: 2rem;
+				// margin: 3rem;
 			}
 		}
 	}
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
+	html {
+		font-size: 55%;
+	}
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 575px) {
+	html {
+		font-size: 50%;
+	}
+
+	.header {
+		background-image: url('../img/heroS.jpg');
+	}
 }
