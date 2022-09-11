@@ -82,7 +82,9 @@ body {
 				display: none;
 			}
 			&--phone {
-				i{padding-right: 1em;}
+				i {
+					padding-right: 1em;
+				}
 			}
 		}
 	}
@@ -153,6 +155,18 @@ body {
 	}
 
 	.header {
-		background-image: url('../img/heroS.jpg');
+		background-image: url('../img/heroS2.jpg');
+	}
+}
+
+@media (max-width: 350px) {
+	.header {
+		.navigation {
+			&__icon {
+				&--phone {
+					display: none;
+				}
+			}
+		}
 	}
 }
