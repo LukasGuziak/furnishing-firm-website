@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="/dist/css/main.min.css">
 </head>
 
@@ -19,7 +22,7 @@
 
         <div class="navigation">
 
-            <a href="" class="navigation__logo">Piotr<span> packi</span></a>
+            <a href="#" class="navigation__logo">Piotr<span> packi</span></a>
 
             <nav class="navigation__navbar">
                 <a class="navigation__item" href="#home">home</a>
@@ -38,18 +41,61 @@
             </div>
 
         </div>
+
+
+        <div class="home" id="home">
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide swiper-slide--one">
+                        <div class="slide-text">
+                            <h3 class="slide-text__title">Zapewniamy najlepsze usługi</h3>
+                            <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                optio animi, delectus modi cum doloremque fuga! Animi quam tempore fugiat?</p>
+                            <a href="about" class="btn iccon"> Jakis tekst</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide--two">
+                        <div class="slide-text">
+                            <h3 class="slide-text__title">Spełnij swoje marzenia</h3>
+                            <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                optio animi, delectus modi cum doloremque fuga! Animi quam tempore fugiat?</p>
+                            <a href="about" class="btn"> Jakis tekst</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide--three">
+                        <div class="slide-text">
+                            <h3 class="slide-text__title">Od projektu po realizację</h3>
+                            <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                optio animi, delectus modi cum doloremque fuga! Animi quam tempore fugiat?</p>
+                            <a href="about" class="btn"> Jakis tekst</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+
+            </div>
+
+        </div>
+
     </header>
 
-    <!-- home section -->
-    <section class="home" id="home">
-
-    </section>
-
 
 
     <div class="space"></div>
     <div class="space"></div>
 
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swipper end -->
     <script src="https://kit.fontawesome.com/bafefdbd87.js" crossorigin="anonymous"></script>
     <script src="/dist/js/main.min.js"></script>
 </body>
