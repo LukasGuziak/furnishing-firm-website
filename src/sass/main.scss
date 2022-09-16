@@ -256,8 +256,8 @@ body {
 			overflow: hidden;
 
 			&__img {
-				background-size: cover;
-				background-position: center;
+				// background-size: cover;
+				// background-position: center;
 				width: 100%;
 				// margin-bottom: 0.6em;
 			}
@@ -281,17 +281,48 @@ body {
 }
 
 //---------------------
-//-------HEADER--------
+//-------PROJECTS--------
 //---------------------
 
-.projects{
+.projects {
 	background-color: var(--black);
-	.heading{
+	.heading {
 		color: var(--white);
 	}
+	.projects-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.image {
+			position: relative;
+			width: 24%;
+			background-color: white;
+			margin-bottom: 1em;
+			overflow: hidden;
+
+			&__img {
+				height: 250px;
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+				// margin-bottom: 1em;
+				// translate: transform 2s;
+			}
+			&__link {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			&__text {
+				padding: 1em;
+			}
+
+		}
+	}
 }
-
-
 
 // ================================
 // MEDIA QUERIES
@@ -407,7 +438,7 @@ body {
 	html {
 		font-size: 50%;
 	}
-	 .home {
+	.home {
 		// .swiper-slide--one {
 		// 	background: cover center url(../img/heroL.jpg);
 		// }
