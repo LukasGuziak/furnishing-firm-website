@@ -293,33 +293,44 @@ body {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		.image {
 			position: relative;
-			width: 24%;
-			background-color: white;
-			margin-bottom: 1em;
+			width: 23%;
+			margin: 0.5em;
 			overflow: hidden;
+			background-color: #fff;
+			height: 270px;
+			border-radius: 5px;
 
 			&__img {
-				height: 250px;
+				height: 270px;
 				width: 100%;
 				object-fit: cover;
 				object-position: center;
-				// margin-bottom: 1em;
-				// translate: transform 2s;
 			}
 			&__link {
+				z-index: 10;
 				position: absolute;
 				top: 0;
 				left: 0;
 				right: 0;
 				bottom: 0;
 			}
-			&__text {
-				padding: 1em;
-			}
 
+			&__icon {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				font-size: 3rem;
+				padding: 0.3em 0.4em;
+				background-color: var(--yellow);
+				color: white;
+				border-radius: 5px;
+			}
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 	}
 }
@@ -345,6 +356,15 @@ body {
 		.service-container {
 			.box {
 				width: 40%;
+			}
+		}
+	}
+
+	//**********projects section************
+	.projects {
+		.projects-container {
+			.image {
+				width: 30%;
 			}
 		}
 	}
@@ -432,6 +452,15 @@ body {
 			}
 		}
 	}
+		//**********projects section************
+		.projects {
+			.projects-container {
+				.image {
+					width: 45%;
+					height: 200px;
+				}
+			}
+		}
 }
 
 @media (max-width: 575px) {
