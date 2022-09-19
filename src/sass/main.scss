@@ -334,6 +334,41 @@ body {
 		}
 	}
 }
+//---------------------
+//-------PRICE--------
+//---------------------
+
+.price {
+	.price-container {
+		.price-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			padding: 1em;
+			margin-bottom: 2em;
+			background-color: var(--light-color);
+
+			&__img {
+				width: 100%;
+				max-height: 300px;
+				padding: 1em;
+			}
+			.price-box-content {
+				// width: 70%;
+				&__title {
+					@include titleText(3rem);
+				}
+				&__text1 {
+					@include graphText(6rem);
+					font-weight: bold;
+					color: var(--yellow);
+				}
+				&__text2 {
+				}
+			}
+		}
+	}
+}
 
 // ================================
 // MEDIA QUERIES
@@ -452,15 +487,15 @@ body {
 			}
 		}
 	}
-		//**********projects section************
-		.projects {
-			.projects-container {
-				.image {
-					width: 45%;
-					height: 200px;
-				}
+	//**********projects section************
+	.projects {
+		.projects-container {
+			.image {
+				width: 45%;
+				height: 200px;
 			}
 		}
+	}
 }
 
 @media (max-width: 575px) {
