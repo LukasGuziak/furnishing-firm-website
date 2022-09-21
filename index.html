@@ -416,21 +416,27 @@
     <div class="contact section" id="contact">
 
         <h1 class="heading">Kontakt</h1>
+        <div class="contact-container">
 
-        <div class="contact-box1">
-            <p class="contact-box__icon">
-                <a href="tel:+48519153888" aria-label="telefon"><i class="fas fa-phone-alt"></i></a>
-            </p>
-            <p class="contact-box__title">numer telefonu</p>
-            <p class="contact-box__text">888-333-444</p>
+            <div class="contact-box">
+                <p class="contact-box__icon">
+                    <a href="tel:+48519153888" aria-label="telefon"><i class="fas fa-phone-alt"></i></a>
+                </p>
+                <p class="contact-box__title">numer telefonu</p>
+                <p class="contact-box__text">888-333-444</p>
+            </div>
 
+            <div class="contact-box">
 
-            <p class="contact-box__icon">
-                <a href="mailto:piotr.packi@gmail.com" aria-label="email"><i class="fas fa-envelope change"></i></a>
-            </p>
-            <p class="contact-box__title">e-mail</p>
-            <p class="contact-box__text">piotr.packi@gmail.com</p>
+                <p class="contact-box__icon">
+                    <a href="mailto:piotr.packi@gmail.com" aria-label="email"><i class="fas fa-envelope change"></i></a>
+                </p>
+                <p class="contact-box__title">e-mail</p>
+                <p class="contact-box__text">piotr.packi@gmail.com</p>
+            </div>
+
         </div>
+
         <div class="contact-container">
             <div class="contact-box">
                 <div class="contact-box__map">
@@ -442,20 +448,29 @@
             </div>
 
             <div class="contact-box">
-                <form class="contact-box__form" action="">
+                <form class="contact-box__form" action="https://formsubmit.co/guziak.luk@gmail.com" method="POST">
                     <h3 class="contact-box__header">Wyślij zapytanie mailem</h3>
-                    <input class="contact-box__input" type="text" placeholder="imię">
-                    <input class="contact-box__input" type="number" placeholder="telefon kontaktowy">
-                    <input class="contact-box__input" type="email" placeholder="adres meilowy">
-                    <textarea class="contact-box__input" name="" placeholder="wpisz text wiadomości" id="" cols="30" rows="10"></textarea>
+                    <input class="contact-box__input" type="text" placeholder="imię" name="name" required>
+                    <input type="hidden" name="_next" value="https://lukasdevtest2/thankyou.html">
+                    <input type="hidden" name="_subject" value="Packi Meble - wiadomość od klienta !">
+                    <input class="contact-box__input" type="number" placeholder="telefon kontaktowy" name="phone" required>
+                    <input class="contact-box__input" type="email" placeholder="adres meilowy" name="email" required>
+                    <textarea class="contact-box__input" placeholder="wpisz text wiadomości" id="" cols="30"
+                        rows="10" name="message" required></textarea>
                     <input class="btn" type="submit" value="wyślij wiadomość">
                 </form>
-
             </div>
 
 
         </div>
     </div>
+
+    <footer class="footer">
+        <p class="footer-item">
+            <a href="#">&copy 2022 LukasDeveloper
+                <span class="footer-text">tworzenie stron internetowych</span></a>
+        </p>
+    </footer>
 
     <!-- lightbox2 -->
     <script src="/dist/js/lightbox-plus-jquery.min.js"></script>
