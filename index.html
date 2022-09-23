@@ -24,29 +24,30 @@
 <body>
 
     <!-- header section -->
-    <header class="header">
 
-        <div class="navigation">
 
-            <a href="#" class="navigation__logo">Piotr<span> packi</span></a>
+     <div class="navigation">
 
-            <nav class="navigation__navbar">
-                <a class="navigation__item" href="#home">home</a>
-                <a class="navigation__item" href="#about">about</a>
-                <a class="navigation__item" href="#services">services</a>
-                <a class="navigation__item" href="#project">project</a>
-                <a class="navigation__item" href="#contact">contact</a>
-            </nav>
+    <a href="#" class="navigation__logo">Piotr<span> packi</span></a>
 
-            <button class="navigation__icon navigation__icon--phone" type="button" aria-label="wykonanie telefonu">
-                <a href="tel:+48661744602"><i class="fas fa-phone-alt"></i>999-111-987</a>
-            </button>
+    <nav class="navigation__navbar">
+        <a class="navigation__item" href="#home">home</a>
+        <a class="navigation__item" href="#about">about</a>
+        <a class="navigation__item" href="#services">services</a>
+        <a class="navigation__item" href="#project">project</a>
+        <a class="navigation__item" href="#contact">contact</a>
+    </nav>
 
-            <div class="navigation__icon navigation__icon--menu" id="menu-btn">
-                <i class="fas fa-bars "></i>
-            </div>
+    <button class="navigation__icon navigation__icon--phone" type="button" aria-label="wykonanie telefonu">
+        <a href="tel:+48661744602"><i class="fas fa-phone-alt"></i>999-111-987</a>
+    </button>
 
-        </div>
+    <div class="navigation__icon navigation__icon--menu" id="menu-btn">
+        <i class="fas fa-bars "></i>
+    </div>
+
+</div>
+
 
         <!-- header home section -->
 
@@ -59,7 +60,7 @@
                         <h3 class="slide-text__title">Zapewniamy najlepsze usługi</h3>
                         <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                             cumque repudiandae impedit!</p>
-                        <a href="about" class="btn iccon"> Jakis tekst</a>
+                        <a href="../thankyou.html" class="btn iccon"> Jakis tekst</a>
                     </div>
                 </div>
 
@@ -87,7 +88,7 @@
 
 
         </div>
-    </header>
+
 
     <!-- about section -->
 
@@ -413,6 +414,7 @@
 
     </div>
 
+         
     <div class="contact section" id="contact">
 
         <h1 class="heading">Kontakt</h1>
@@ -467,10 +469,12 @@
 
     <footer class="footer">
         <p class="footer-item">
-            <a href="#">&copy 2022 LukasDeveloper
+            <a href="#">&copy;<span class="footer__year"></span> LukasDeveloper
                 <span class="footer-text">tworzenie stron internetowych</span></a>
         </p>
+
     </footer>
+
 
     <!-- lightbox2 -->
     <script src="/dist/js/lightbox-plus-jquery.min.js"></script>
