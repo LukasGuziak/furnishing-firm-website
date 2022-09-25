@@ -40,6 +40,7 @@ body {
 }
 .btn {
 	display: inline-block;
+	min-width: 150px ;
 	padding: 0.8em 2em;
 	background: var(--black);
 	color: var(--white);
@@ -47,6 +48,7 @@ body {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	border-radius: 5px;
+	text-align: center;
 	&:hover {
 		background: var(--yellow);
 		color: var(--black);
@@ -83,7 +85,7 @@ body {
 	}
 	&__item {
 		@include titleText(2rem);
-		margin: 0 1rem;
+		padding: 1em 1.5em;
 
 		&:hover {
 			color: var(--yellow);
@@ -95,22 +97,12 @@ body {
 			display: none;
 		}
 		&--phone {
-			i {
-				padding-right: 1em;
-			}
+			font-size: 2.2rem;
+			margin-right: 1em;
+
 		}
 	}
 }
-// .header {
-// 	height: 100vh;
-// 	// background-color: rgba(114, 94, 39, 0.2);
-// 	// background-image: url('../img/heroL.jpg');
-// 	// background-size: cover;
-// 	// background-repeat: no-repeat;
-// 	// background-position: center;
-// 	// background-blend-mode: multiply;
-
-// }
 
 //---------------------
 //-------HOME----------
@@ -187,12 +179,10 @@ body {
 
 	.container {
 		width: 45%;
-		// background-color: red;
 	}
 	&__foto {
 		width: 100%;
 		border-radius: 100%;
-		// object-position: right;
 	}
 	&__title {
 		@include titleText(3rem);
@@ -208,10 +198,7 @@ body {
 //---------------------
 //-------ABAUT--------
 //---------------------
-
 .about {
-	// padding: 3em 10%;
-
 	.about-container {
 		display: flex;
 		flex-wrap: wrap;
@@ -227,7 +214,6 @@ body {
 
 			img {
 				width: 100%;
-				// max-width: 700px;
 			}
 		}
 		.about-text {
@@ -242,6 +228,9 @@ body {
 				@include graphText(2rem);
 				margin-bottom: 1em;
 			}
+		}
+		.btn {
+			margin: 0.5em;
 		}
 	}
 	.about-container2 {
@@ -291,10 +280,7 @@ body {
 			overflow: hidden;
 
 			&__img {
-				// background-size: cover;
-				// background-position: center;
 				width: 100%;
-				// margin-bottom: 0.6em;
 			}
 			&__title {
 				text-align: center;
@@ -302,7 +288,6 @@ body {
 				@include titleText(2.4rem);
 				text-transform: uppercase;
 				color: var(--yellow);
-				// text-shadow: 1px 1px 1px rgb(104, 104, 104);
 			}
 			&__text {
 				padding: 0 1em 1em;
@@ -374,7 +359,6 @@ body {
 //---------------------
 
 .price {
-	// background-color: var(--light-bg);
 	.price-container {
 		.price-box {
 			display: flex;
@@ -443,7 +427,6 @@ body {
 			align-items: center;
 			width: 48%;
 			margin-bottom: 6em;
-			// background-color: rgba($color: #3633ff, $alpha: 0.3);
 			&__map {
 				width: 100%;
 				iframe {
@@ -485,10 +468,6 @@ body {
 				padding: 1em;
 				width: 100%;
 				border-radius: 5px;
-				// display: flex;
-				// flex-direction: column;
-				// justify-content: center;
-				// align-items: center;
 			}
 			&__header {
 				@include titleText(2rem);
@@ -514,45 +493,53 @@ body {
 		}
 	}
 }
+//---------------------
+//-------FOOTER--------
+//---------------------
+
+.footer {
+	height: 6vh;
+	background-color: var(--light-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+
+	&__link {
+		color: var(--yellow);
+		padding: .5em 0em;
+		margin: .5em 0em;
+
+		&:hover {
+			.footer__text {
+				color: var(--white);
+			}
+		}
+	}
+	&__text {
+		font-weight: bold;
+	}
+}
 
 // ================================
 // MEDIA QUERIES
 // ================================
 
 @media (max-width: 1400px) {
+	//**********navigation section************
+	.navigation {
+		&__item {
+			padding: 1em 0.9em;
+		}
+	}
 }
 
 @media (max-width: 1199px) {
 	//**********navigation section************
+
 	.navigation {
 		padding: 1.5em 10%;
-	}
-
-	//**********service section************
-
-	.service {
-		.service-container {
-			.box {
-				width: 40%;
-			}
-		}
-	}
-
-	//**********projects section************
-	.projects {
-		.projects-container {
-			.image {
-				width: 30%;
-			}
-		}
-	}
-}
-
-@media (max-width: 991px) {
-	//**********navigation section************
-
-	.navigation {
-		padding: 1.5em 1em;
 		&__icon {
 			&--menu {
 				display: inline-block;
@@ -576,9 +563,30 @@ body {
 			display: block;
 			text-align: center;
 			padding: 2rem;
-			// margin: 3rem;
 		}
 	}
+
+	//**********service section************
+
+	.service {
+		.service-container {
+			.box {
+				width: 40%;
+			}
+		}
+	}
+
+	//**********projects section************
+	.projects {
+		.projects-container {
+			.image {
+				width: 30%;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
 	//**********home section************
 	.home {
 		.swiper-slide {
@@ -652,10 +660,6 @@ body {
 			.about-text {
 				width: 100%;
 				text-align: center;
-				// &__title {
-				// }
-				// &__text {
-				// }
 			}
 		}
 	}
@@ -685,15 +689,18 @@ body {
 
 	//**********home section************
 	.home {
-		// .swiper-slide--one {
-		// 	background: cover center url(../img/heroL.jpg);
-		// }
-		// .swiper-slide--two {
-		// 	background: cover center url(../img/heroL3.jpg);
-		// }
-		// .swiper-slide--three {
-		// 	background: cover center right url(../img/heroL2.jpg);
-		// }
+		.swiper-slide--one {
+			background: url(../img/heroS.jpg) center;
+			background-size: cover;
+		}
+		.swiper-slide--two {
+			background:center url(../img/heroS3.jpg);
+			background-size: cover;
+		}
+		.swiper-slide--three {
+			background:center right url(../img/heroS2.jpg);
+			background-size: cover;
+		}
 
 		.swiper-slide {
 			.slide-text {

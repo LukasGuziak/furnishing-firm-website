@@ -26,68 +26,72 @@
     <!-- header section -->
 
 
-     <div class="navigation">
+    <div class="navigation">
 
     <a href="#" class="navigation__logo">Piotr<span> packi</span></a>
 
     <nav class="navigation__navbar">
-        <a class="navigation__item" href="#home">home</a>
-        <a class="navigation__item" href="#about">about</a>
-        <a class="navigation__item" href="#services">services</a>
-        <a class="navigation__item" href="#project">project</a>
-        <a class="navigation__item" href="#contact">contact</a>
+        <a class="navigation__item" href="#home">start</a>
+        <a class="navigation__item" href="#about">firma</a>
+        <a class="navigation__item" href="#services">usługi</a>
+        <a class="navigation__item" href="#project">projekty</a>
+        <a class="navigation__item" href="#price">cennik</a>
+        <a class="navigation__item" href="#contact">kontakt</a>
     </nav>
 
-    <button class="navigation__icon navigation__icon--phone" type="button" aria-label="wykonanie telefonu">
-        <a href="tel:+48661744602"><i class="fas fa-phone-alt"></i>999-111-987</a>
-    </button>
+    <div class="navigation-container">
 
-    <div class="navigation__icon navigation__icon--menu" id="menu-btn">
-        <i class="fas fa-bars "></i>
+        <button class="navigation__icon navigation__icon--phone" type="button" aria-label="wykonanie telefonu">
+            <a href="tel:+48661744602"><i class="fas fa-phone-alt"></i></a>
+        </button>
+
+        <div class="navigation__icon navigation__icon--menu" id="menu-btn">
+            <i class="fas fa-bars "></i>
+        </div>
     </div>
 
 </div>
 
 
-        <!-- header home section -->
+    <!-- home section -->
 
-        <div class="home swiper mySwiper" id="home">
+    <div class="home swiper mySwiper" id="home">
 
-            <div class="swiper-wrapper">
+        <div class="swiper-wrapper">
 
-                <div class="swiper-slide swiper-slide--one">
-                    <div class="slide-text">
-                        <h3 class="slide-text__title">Zapewniamy najlepsze usługi</h3>
-                        <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                            cumque repudiandae impedit!</p>
-                        <a href="../thankyou.html" class="btn iccon"> Jakis tekst</a>
-                    </div>
+            <div class="swiper-slide swiper-slide--one">
+                <div class="slide-text">
+                    <h3 class="slide-text__title">Zapewniamy najlepsze usługi</h3>
+                    <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                        cumque repudiandae impedit!</p>
+                    <a href="#about" class="btn iccon">nasza firma</a>
                 </div>
-
-                <div class="swiper-slide swiper-slide--two">
-                    <div class="slide-text">
-                        <h3 class="slide-text__title">Spełnij swoje marzenia</h3>
-                        <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-                            nisi odit eos!</p>
-                        <a href="about" class="btn"> Jakis tekst</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide swiper-slide--three">
-                    <div class="slide-text">
-                        <h3 class="slide-text__title">Od projektu po realizację</h3>
-                        <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-                            saepe autem amet.</p>
-                        <a href="about" class="btn"> Jakis tekst</a>
-                    </div>
-                </div>
-
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 
+            <div class="swiper-slide swiper-slide--two">
+                <div class="slide-text">
+                    <h3 class="slide-text__title">Spełnij swoje marzenia</h3>
+                    <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                        nisi odit eos!</p>
+                    <a href="#about" class="btn iccon">nasza firma</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--three">
+                <div class="slide-text">
+                    <h3 class="slide-text__title">Od projektu po realizację</h3>
+                    <p class="slide-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                        saepe autem amet.</p>
+                    <a href="#about" class="btn iccon">nasza firma</a>
+                </div>
+            </div>
 
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+
+    </div>
 
 
     <!-- about section -->
@@ -110,7 +114,8 @@
 
 
                 </p>
-                <a href="about" class="btn">Nasze usługi</a>
+                <a href="#services" class="btn">usługi</a>
+                <a href="#project" class="btn">realizacje</a>
             </div>
 
         </div>
@@ -143,7 +148,7 @@
 
     <!-- service section -->
 
-    <div class="service section" id="service">
+    <div class="service section" id="services">
 
         <h1 class="heading">Nasze usługi</h1>
 
@@ -390,7 +395,7 @@
                         quod eaque
                         numquam tempore nihil voluptatum assumenda inventore, obcaecati sunt quidem quia quas recusandae
                         cupiditate! Voluptate, optio. Corrupti, numquam. Amet, nobis!</p>
-                    <a href="about" class="btn">Zamów</a>
+                    <a href="#contact" class="btn">Zamów</a>
                 </div>
             </div>
 
@@ -405,7 +410,7 @@
                         quod eaque
                         numquam tempore nihil voluptatum assumenda inventore, obcaecati sunt quidem quia quas recusandae
                         cupiditate! Voluptate, optio. Corrupti, numquam. Amet, nobis!</p>
-                    <a href="about" class="btn">Zamów</a>
+                    <a href="#contact" class="btn">Zamów</a>
                 </div>
             </div>
 
@@ -414,7 +419,7 @@
 
     </div>
 
-         
+    
     <div class="contact section" id="contact">
 
         <h1 class="heading">Kontakt</h1>
@@ -469,8 +474,8 @@
 
     <footer class="footer">
         <p class="footer-item">
-            <a href="#">&copy;<span class="footer__year"></span> LukasDeveloper
-                <span class="footer-text">tworzenie stron internetowych</span></a>
+            <a class="footer__link" href="https://lukasdev.pl">&copy;<span class="footer__year"></span>
+                <span class="footer__text"> LukasDeveloper</span> tworzenie stron internetowych</a>
         </p>
 
     </footer>
