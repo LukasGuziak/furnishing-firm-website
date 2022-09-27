@@ -40,7 +40,7 @@ body {
 }
 .btn {
 	display: inline-block;
-	min-width: 150px ;
+	min-width: 150px;
 	padding: 0.8em 2em;
 	background: var(--black);
 	color: var(--white);
@@ -99,7 +99,6 @@ body {
 		&--phone {
 			font-size: 2.2rem;
 			margin-right: 1em;
-
 		}
 	}
 }
@@ -151,9 +150,10 @@ body {
 				text-transform: uppercase;
 			}
 			&__text {
-				@include graphText(2.3rem);
+				@include graphText(2.8rem);
 				color: var(--black);
 				margin-bottom: 2em;
+				font-weight: bold;
 			}
 		}
 	}
@@ -191,7 +191,7 @@ body {
 	}
 	&__text {
 		@include graphText(2.4rem);
-		margin-bottom: 2em;
+		margin-bottom: 0em 0.2em 2em;
 	}
 }
 
@@ -227,6 +227,7 @@ body {
 			&__text {
 				@include graphText(2rem);
 				margin-bottom: 1em;
+				text-align: justify;
 			}
 		}
 		.btn {
@@ -292,6 +293,7 @@ body {
 			&__text {
 				padding: 0 1em 1em;
 				@include graphText(1.8rem);
+				text-align: center;
 			}
 			&:hover {
 				transform: scale(1.06);
@@ -401,6 +403,11 @@ body {
 				&__text2 {
 					@include graphText(1.8rem);
 					margin-bottom: 1.5em;
+					text-align: justify;
+				}
+				&__link {
+					font-weight: bold;
+					color: black;
 				}
 			}
 		}
@@ -505,11 +512,10 @@ body {
 	align-items: center;
 	text-align: center;
 
-
 	&__link {
 		color: var(--yellow);
-		padding: .5em 0em;
-		margin: .5em 0em;
+		padding: 0.5em 0em;
+		margin: 0.5em 0em;
 
 		&:hover {
 			.footer__text {
@@ -565,6 +571,18 @@ body {
 			padding: 2rem;
 		}
 	}
+	//**********about section************
+	.about {
+		.about-container {
+			.about-img {
+				width: 80%;
+			}
+			.about-text {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
 
 	//**********service section************
 
@@ -592,6 +610,9 @@ body {
 		.swiper-slide {
 			.slide-text {
 				width: 70%;
+				&__text {
+					font-size: 2.3rem;
+				}
 			}
 		}
 	}
@@ -650,19 +671,15 @@ body {
 			text-align: center;
 		}
 	}
-
 	//**********about section************
 	.about {
 		.about-container {
 			.about-img {
 				width: 100%;
 			}
-			.about-text {
-				width: 100%;
-				text-align: center;
-			}
 		}
 	}
+
 	//**********service section************
 	.service {
 		.service-container {
@@ -694,11 +711,11 @@ body {
 			background-size: cover;
 		}
 		.swiper-slide--two {
-			background:center url(../img/heroS3.jpg);
+			background: center url(../img/heroS3.jpg);
 			background-size: cover;
 		}
 		.swiper-slide--three {
-			background:center right url(../img/heroS2.jpg);
+			background: center right url(../img/heroS2.jpg);
 			background-size: cover;
 		}
 
@@ -706,15 +723,26 @@ body {
 			.slide-text {
 				width: 100%;
 				text-align: center;
+				margin: 2%;
 				&__title {
-					margin: 2%;
+					@include titleText(4rem);
 				}
+				&__text {
+					padding: 0 8%;
+				}
+			}
+			&::before {
+				background: linear-gradient(
+					90deg,
+					var(--white),
+					rgba(255, 255, 255, 0.3)
+				);
 			}
 		}
 		.swiper-button-next,
 		.swiper-button-prev {
 			color: var(--yellow);
-			text-shadow: 1px 1px 5px black;
+			text-shadow: 1px 1px 1px black;
 			&::after {
 				font-size: 4rem;
 			}
